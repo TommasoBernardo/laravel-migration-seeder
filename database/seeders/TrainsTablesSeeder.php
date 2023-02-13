@@ -18,9 +18,9 @@ class TrainsTablesSeeder extends Seeder
     {
         for ($i = 0; $i < 20; $i++) {
             $newTrainItem = new Train();
-            $newTrainItem->company = $faker->randomElement(['Trenitalia', 'Italo', 'RailOne', 'CapTrain', 'GT Rail']);
-            $newTrainItem->departure_station = $faker->randomElement(['Milan', 'Rome', 'Bari', 'Geneva', 'Zurich', 'London', 'Berlin', 'Valencia', 'Madrid', 'Amsterdam', 'Rotterdam', 'Paris', 'Nice', 'Lione', 'Budapest']);
-            $newTrainItem->arrival_station = $faker->randomElement(['Milan', 'Rome', 'Bari', 'Geneva', 'Zurich', 'London', 'Berlin', 'Valencia', 'Madrid', 'Amsterdam', 'Rotterdam', 'Paris', 'Nice', 'Lione', 'Budapest']);
+            $newTrainItem->company = $faker->randomElement(['Trenitalia', 'Italo', 'freccia-rossa', 'freccia-bianca', 'GT Rail']);
+            $newTrainItem->departure_station = $faker->randomElement(['Milan', 'Rome', 'Bari', 'Geneva', 'Zurich', 'London', 'Berlin', 'Valencia', 'Madrid', 'Amsterdam', 'Catania', 'Paris', 'Nice', 'Lione', 'Budapest']);
+            $newTrainItem->arrival_station = $faker->randomElement(['Milan', 'Rome', 'Bari', 'Geneva', 'Zurich', 'London', 'Berlin', 'Valencia', 'Madrid', 'Amsterdam', 'Catania', 'Paris', 'Nice', 'Lione', 'Budapest']);
             $newTrainItem->departure_time = $faker->time();
             $newTrainItem->arrival_time = $faker->time();
             $newTrainItem->train_code = $faker->regexify('[A-Z]{8}[0-4]{4}');

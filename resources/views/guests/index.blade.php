@@ -1,16 +1,16 @@
 @extends('layout.app')
 
 @section('main-content')
-    <main class="bg-warning bg-opacity-50">
+    <main class="bg-success bg-opacity-50">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
                     <h2>Partenze</h2>
-                    <table class="table table-dark">
+                    <table class="table table-light">
                         <thead>
                             <tr>
                                 <th scope="col">
-                                    Vettore
+                                    Agenzia
                                 </th>
                                 <th scope="col" class="d-none d-md-block">
                                     Treno
